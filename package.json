@@ -4,8 +4,10 @@
   "description": "this is a project about tour guide selected by alamin sir",
   "main": "app.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "eslint": "^5.15.2",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-session": "^1.15.6"
   },
   "devDependencies": {},
   "scripts": {
