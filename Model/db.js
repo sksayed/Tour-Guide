@@ -72,8 +72,10 @@ module.exports = {
 			getConnection(function(connection){
 			connection.query(sql, params, function(err, status){
 				if(err){
+					console.log( " error "+err);
 					callback(status);
 				}else{
+					console.log( status);
 					callback(status);
 				}
 			});

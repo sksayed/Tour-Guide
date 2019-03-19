@@ -3,6 +3,7 @@ const express  = require('express');
 const login    = require('./controllers/login');
 const logout    = require('./controllers/logout');
 const home     = require('./controllers/home');
+const registration = require('./controllers/registration');
 var bodyParser 		= require('body-parser');
 var exSession 		= require('express-session');
 const portNumber = "5000";
@@ -24,6 +25,7 @@ app.set('view engine', 'ejs');
 app.use('/login', login);
 app.use('/home' , home);
 app.use('/logout', logout);
+app.use('/registration', registration);
 
 
 app.get('/' , function ( req , res , next )
